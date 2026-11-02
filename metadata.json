@@ -1,0 +1,6 @@
+{
+  "name": "TimberCraft Studio & Woodworking Journal",
+  "description": "Bespoke woodworking portfolio, heirloom furniture gallery, in-depth tool reviews, and expert joinery guides for makers and woodcraft enthusiasts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

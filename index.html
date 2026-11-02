@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimberCraft Studio & Woodworking Journal</title>
+    <meta name="description" content="Bespoke woodworking portfolio, heirloom furniture gallery, in-depth tool reviews, and expert joinery guides for makers and woodcraft enthusiasts." />
+    
+    <!-- OpenGraph Metadata -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TimberCraft Studio" />
+    <meta property="og:title" content="TimberCraft Studio & Woodworking Journal" />
+    <meta property="og:description" content="Bespoke woodworking portfolio, heirloom furniture gallery, in-depth tool reviews, and expert joinery guides for makers and woodcraft enthusiasts." />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TimberCraft Studio & Woodworking Journal" />
+    <meta name="twitter:description" content="Bespoke woodworking portfolio, heirloom furniture gallery, in-depth tool reviews, and expert joinery guides." />
+    
+    <!-- Google Fonts for Artisanal Craft Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://timbercraft.studio/#website",
+          "url": "https://timbercraft.studio",
+          "name": "TimberCraft Studio & Woodworking Journal",
+          "description": "Bespoke woodworking portfolio, heirloom furniture gallery, in-depth tool reviews, and expert joinery guides.",
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://timbercraft.studio/#organization",
+          "name": "TimberCraft Studio",
+          "url": "https://timbercraft.studio",
+          "logo": "https://timbercraft.studio/icon.png",
+          "sameAs": [
+            "https://instagram.com/timbercraftstudio",
+            "https://youtube.com/@timbercraftstudio",
+            "https://pinterest.com/timbercraftstudio"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://timbercraft.studio/#founder",
+          "name": "Johnson Wadimbe",
+          "jobTitle": "Master Woodworker & Furniture Maker",
+          "description": "Custom furniture artisan with 18+ years crafting studio heirloom pieces and field-testing professional woodcraft machinery."
+        }
+      ]
+    }
+    </script>
+    <script>
+      // Initialize dark mode before render to prevent FOUC
+      (function() {
+        try {
+          const stored = localStorage.getItem('timbercraft_theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#faf7f2] dark:bg-[#121110] text-stone-900 dark:text-stone-100 antialiased selection:bg-amber-600 selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
